@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f0f0f0;
-        }
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        #ip-address {
-            font-size: 5em;
-            font-weight: bold;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <div id="ip-address">Fetching IP...</div>
+    <title>Bootstrap 4, from LayoutIt!</title>
 
-    <script>
-        // Fetch the public IPv4 address using a third-party API
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('ip-address').textContent = data.ip;
-            })
-            .catch(error => {
-                document.getElementById('ip-address').textContent = "Error fetching IP";
-            });
-    </script>
-</body>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				Hey! This domain is claimed by WooXD. Reach out to him at https://github.com/WooRepo for more info or an agreement! Thank you.
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
